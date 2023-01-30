@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base target="_top">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>P9 Tiles</title>
+
+    <link rel="stylesheet" href="/libs/leaflet.css" crossorigin="" />
+    <script src="/libs/leaflet.js" crossorigin=""></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .leaflet-container {
+            height: 400px;
+            width: 600px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        .slider-holder {
+            position: absolute;
+            bottom: 1rem;
+            right: 53%;
+            left: 47%;
+            z-index: 900;
+        }
+
+        .slider-container {
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: white;
+            border-radius: 5px;
+            width: 12rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .slider-holder input {
+            position: relative;
+            margin-left: 8px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id='map'></div>
+    <!-- <div class="slider-holder">
+        <div class="slider-container">
+            <p>Opacity: </p>
+            <input type="range" min="1" max="100" value="70" class="slider" id="opacity-slider">
+        </div>
+    </div> -->
+
+    </div>
+
+    <script>
+        const MAX_ZOOM = 10
+        const INIT_ZOOM = 1
+        const MAP_CENTER = [39.46026621204401, 50.414682727806095]
+
+        const DATA_URL = '/tiles/v2/{z}/{x}/{y}.png'
+
+    </script>
+
+    <script src="/libs/index.js" crossorigin=""></script>
+
+</body>
+
+</html>
